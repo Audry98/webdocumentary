@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PLAY</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="player.css">
+</head>
+
+
+
+
+
+<body>
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="player.html">PORTFOLIO</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="mailto:someone@example.com"><img src="img/contact.png" id="contact" alt="mail"></a></li>
+            </ul>
+        </nav>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+    <div class="play">
+        <audio id="audio" src="music.mp3"></audio>
+    </div>
+
+
+  </div>
+
+
+        <div class="vid">
+            <div class="left">
+                <video loop id="videon" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="img/introvid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="text">
+                <p id="talk">
+                  "I used to record guitar sounds many years ago and these sounds are manipulated on my computer.
+                  Now I have a whole library of sounds that usually come from guitar.""<br>
+                  "To create sounds that I haven’t heard, new concepts that I haven’t seen I was sort of bitten by a bug,
+                  I can’t stop doing it, it used to be a hobby, but I just spent so much time on it, it is the main thing I
+                  want to do.""<br>
+                  "It’s a music involving computers…" <br>
+                  "The whole idea is that I don’t create sound, I just start with noise and then feedback, video feedback
+                  and then it starts to create waves…"<br>
+                  "Visual stuff based on sound."
+                  "Music that you couldn’t imagine. I was inspired to do electronic music
+                  I have been playing with some classical composers and musicians, trying to combine electronic
+                  processing – the way I do it - with real instruments." <br>
+                  "I want to hear new things."
+                 </p>
+            </div>
+        </div>
+
+
+        <div class="vid">
+
+            <div class="text">
+                <p>Svend Ejnar Fisker was mainly inspired by data visualization.<br>
+                  Data visualization refers to the techniques used to communicate data or information by encoding it
+                  as visual objects (points, lines or bars) contained in graphics. The goal is to communicate information
+                  clearly and efficiently to users. It is one of the steps in data analysis or data science.
+                </p>
+            </div>
+            <div class="left">
+                <video loop class="videon" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="img/vid1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="vid">
+            <div class="left">
+                <video loop class="videon" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="img/vid2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="text">
+                <p>
+                  Almost all data visualizations are created for human consumption. Knowledge of human perception
+                  and cognition is necessary when designing intuitive visualizations. Cognition refers to processes in
+                  human beings like perception, attention, learning, memory, thought, concept formation, reading,
+                  and problem solving. Proper visualization provides a different approach to show potential connections, relationships, etc. which are not as
+                  obvious in non-visualized quantitative data. Visualization can become a means of data exploration.                </p>
+            </div>
+        </div>
+
+
+        <div class="vid">
+
+            <div class="text">
+                <p>
+                  He primarily works with various forms of digital signal processing. This way he can explore new way
+                  of interacting with sound and music, through software.
+                  Digital signal processing is the use of digital processing, by computers or more specialized digital
+                  signal processors, to perform a wide variety of signal processing operations. The signals processed in
+
+                  this manner are a sequence of numbers that represent samples of a continuous variable in a domain
+                  such as time, space, or frequency.
+                </p>
+            </div>
+            <div class="left">
+                <video loop class="videon" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="img/vid3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+
+
+        <div class="vid">
+            <div class="left">
+                <video loop class="videon" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="img/vid4.mov" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="text">
+                <p>
+                  DSP applications include audio and speech processing, sonar, radar and other sensor
+                  array processing, spectral density estimation, statistical signal processing, digital image processing,
+                  signal processing for telecommunications, control systems and a lot more.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="vid">
+
+            <div class="text">
+                <p>Svend Ejnar Fisker experiments with creating waves of sounds from noise through software and adding visuals to
+have the best experience possible. He calls his music experimental and personal, his main goal is to
+make people wonder.
+                </p>
+            </div>
+            <div class="left">
+                <video loop class="videon" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="img/vid5.mov" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <footer>
+            <p>COPYRIGHT GROUP 2</p>
+        </footer>
+
+        <script>
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            };
+
+            (function(window) {
+                function setupVideo()
+                {
+                    var v = document.getElementById('videon');
+                    v.addEventListener('mouseover', function() { this.controls = true; }, false);
+                    v.addEventListener('mouseout', function() { this.controls = false; }, false);
+                }
+
+                window.addEventListener('load', setupVideo, false);
+            })(window);
+
+        </script>
+
+</body>
+
+</html>

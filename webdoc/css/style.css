@@ -1,0 +1,143 @@
+html{
+}
+
+body{
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  background-color: #161616;
+}
+
+p{
+  margin: 0;
+}
+
+/* NAVIGATION */
+
+nav {
+  float: right;
+  writing-mode: vertical-lr;
+  text-decoration: none;
+  height: 100%;
+  width: 20vh;
+}
+
+ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 3vh;
+  font-size: 2vh;
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover{
+	color: #fff;
+}
+
+#contact{
+  width: 5vh;
+  height: auto;
+}
+
+/* PAGE */
+
+.front img{
+  height: 100vh;
+}
+
+.front{
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.pat1{
+  display: inline-block;
+}
+
+.slider_section{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-color: #181818;
+}
+
+.slider {
+}
+
+.beer-reveal{
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.beer-handle {
+  top: 80vh;
+}
+
+
+#name {
+  z-index: 10;
+  margin: 0;
+  float: right;
+  margin-top: -46vh;
+  margin-right: 20vh;
+  position: relative;
+  font-size: 6vh;
+}
+
+#intro{
+  z-index: 10;
+  margin: 0;
+  float: right;
+  margin-top: -32vh;
+  margin-right: 20vh;
+  position: relative;
+}
+
+
+/* SECOND PART OF PAGE */
+
+.video_section{
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../img/bgwaveof_rev.jpg");
+}
+
+.center{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#videon {
+    width: 40%;
+    height: auto;
+    cursor: pointer;
+    margin-left: 22vh;
+    margin-top: 22vh;
+}
+
+footer{
+  width: 100%;
+  height: 15px;
+  font-size: 1.6vh;
+  color: grey;
+  background-color: #181818;
+
+}

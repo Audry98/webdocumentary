@@ -1,0 +1,12 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+    background-color: #1A1A1A;
+    margin: 0;
+}
+
+
+p {
+    margin: 20%;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Svend Ejnar Fisker</title>
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link rel='stylesheet' href='https://unpkg.com/beerslider/dist/BeerSlider.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="myFunction()">
+  <header>
+  </header>
+
+<section class="front slider_section">
+  <div class="slider">
+    <div class="pat1">
+      <img src="img/frontbgright.png" alt="background">
+      <h1 id="name">Svend Ejnar Fisker</h1>
+      <p id="intro">COMPOSER, PRODUCER, RESEARCHER</p>
+    </div>
+    <div class="beer-reveal">
+      <div class="pat2">
+        <img src="img/gifasof.gif" id="face" alt="background gif">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="front video_section">
+  <nav>
+    <ul>
+      <li><a href="index.html">ABOUT</a></li>
+      <li><a href="player.html">PORTFOLIO</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="news.html">NEWS</a></li>
+      <li><a href="mailto:someone@example.com"><img src="img/contact.png" id="contact" alt="mail"></a></li>
+    </ul>
+  </nav>
+
+  <div class="center">
+    <video loop id="videon" onmouseover="this.play()" onmouseout="this.pause()">
+      <source src="img/00268_2.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</section>
+<footer>
+    <p>COPYRIGHT GROUP 2</p>
+</footer>
+
+    <script src='https://unpkg.com/beerslider/dist/BeerSlider.js'></script>
+    <script src="js/index.js"></script>
+    <script>
+    function myFunction() {
+    alert("Turn sound on :)");
+    }
+    </script>
+</body>
+</html>

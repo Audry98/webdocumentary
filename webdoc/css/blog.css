@@ -1,0 +1,110 @@
+body {
+  font-family: 'Maven Pro', sans-serif;
+  color: white;
+  margin: 0;
+  background-image: url("bgwaveofbl.png");
+  background-size: cover;
+}
+
+img {
+    width: 40%;
+    height: auto;
+}
+
+/* NAVIGATION */
+
+nav {
+  float: right;
+  writing-mode: vertical-lr;
+  text-decoration: none;
+  height: 100%;
+  width: 20vh;
+  display: inline-flex;
+}
+
+ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 3vh;
+  font-size: 2vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+	color: #fff;
+}
+
+#contact{
+  width: 5vh;
+  height: auto;
+}
+
+.parent {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.blog_word {
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.articles {
+    float: right;
+    width: 58%;
+    text-align: left;
+    border-left: 1px grey solid;
+}
+
+p {
+    margin: 20%;
+    text-align: center;
+}
+
+i{
+  color: white;
+}
+
+/*link effect-underline*/
+
+
+a.effect-underline:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 33%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    margin-left: 30em;
+}
+
+a.effect-underline:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+}
+
+a:-webkit-any-link {
+    color: #898989;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 5.25em;
+}
